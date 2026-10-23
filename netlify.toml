@@ -1,0 +1,13 @@
+# Owner dashboard. No build step: publish this folder as it is.
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/admin.html"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
